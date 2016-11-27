@@ -1,0 +1,308 @@
+/*
+Theme Name: jajananPasar
+Author: jajananpasar
+Author URI: http://jajananpasar.id
+Version: 1.0
+*/
+
+@import url('bootstrap/css/bootstrap.css'); 
+/*@import url('bootstrap/css/bootstrap-responsive.css');*/ 
+@import url('bootstrap/css/bootstrap-timepicker.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@font-face {
+    font-family: fontBSocialico;
+    src: url(fonts/Socialico.otf);
+}
+
+@font-face {
+    font-family: fontBSocialicoPlus;
+    src: url(fonts/SocialicoPlus.otf);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; 
+}
+
+.site-footer{
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  background-color: #666666;
+  color: white;
+}
+
+.site-header{
+	padding-left: 0;
+  padding-right: 0;
+}
+
+.site-info{
+  margin-top: 30px;
+}
+.site-info p{
+  margin-left: 50px;
+  margin-bottom: 0;
+}
+
+.site-row{
+  margin-left: 50px;
+  padding-bottom: 100px;
+}
+
+.jarak-tulisan{
+  margin-top: 10px;
+}
+
+.foto-user{
+  width: 200px;
+  height: 200px;
+}
+
+.gambar{
+	position: relative;
+	margin: 0;
+}
+
+.judul{
+	position: absolute; 
+  margin-left: 50px;
+  margin-top: -300px;
+  color: white;
+}
+
+td {
+  vertical-align: top;
+}
+
+.order{
+  margin-top: 33px;
+  margin-left: 50px;
+}
+th{
+  background-color: #999999;
+  color: white;
+  padding: 10px;
+}
+
+.header-user{
+  background-color: #b3b3b3;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.header-user h3{
+  margin-left: 50px;
+}
+.header-user h5{
+  margin-left: 50px;
+}
+
+.ul-footer{
+  list-style-type: none;
+}
+
+.footer-nav {
+  background-color: #666666;
+  color: white;
+}
+
+.navbar{
+  margin-bottom: 0;
+}
+
+.table-history{
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-top: 45px;
+  margin-bottom: 170px;
+  width: 75%;
+}
+
+.border-kanan{
+  border-right: 1px solid #000;
+}
+
+.table-history tbody> tr> td {
+  border-top: 0px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.table-history tbody> tr> th {
+  text-align: center;
+}
+
+.site-form-pembayaran{
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.form-control{
+  width: 50%;
+}
+
+.input-pembayaran{
+  margin-bottom: 20px;
+}
+
+.input-tanggal{
+  margin-left: -108px;
+}
+
+.input-pembayaran .form-inline .form-group{
+  margin-right: 10px;
+}
+
+.button-pembayaran{
+  height: 75px;
+}
+
+.wib{
+  margin-left: -20%;
+  margin-top: 10px;
+}
+
+.row-checkout{
+    margin-right: -95px;
+    margin-left: -45px;
+}
+
+.pesanan{
+  background-color: #dcdcdc;
+  padding-bottom: 20px;
+}
+
+.pesanan a{
+  color: #da2c2c;
+}
+
+.pesanan h4{
+  text-align: center;
+}
+
+.biaya{
+  text-align: right;
+}
+
+.rincian-biaya{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.font1{
+  font-family: fontBSocialico;
+  font-size: 45px;
+  color: white;
+}
+
+.font2{
+  font-family: fontBSocialicoPlus;
+  font-size: 45px;
+  color: white;
+}
+
+.footer-nav p{
+  margin-left: 40px;
+  margin-top: 15px;
+}
+
+.footer-nav a{
+  color: white;
+  text-decoration: none;
+}
+
+nav a{
+  color: #000;
+}
+
+.site-border{
+  border-top: 3px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.form-check{
+  margin-left: -15px;
+}
+
+.form-checkout {
+    width: 68%;
+}
+
+.metode-pembayaran{
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+}
+
+.form-group button{
+  width: 93%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.tombol-login{
+  left: 100%;
+  top: 5px;
+}
+
+.thumbnail-home{
+  margin-left: 100px;
+}
+
+.mengapa{
+  background-color: #ccc; 
+  color: white; 
+  text-align: center;
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+
+.form-home{
+  background-color: #ccc;
+  top: 48px;
+  padding-bottom: 80px;
+  margin-top: -96px;
+
+}
+
+.container-fluid .jumbotron{
+  border-radius: 0px;
+}
+
+.jumbotron .form-control{
+  width: 120%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.jumbotron .btn{
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 20px;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.jumbotron h3{
+  text-align: center;
+  border-bottom: 3px solid blue;
+}
+
+.jumbotron h2{
+  color: white;
+  margin-top: 150px;
+}
