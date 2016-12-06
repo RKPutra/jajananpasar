@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # jajananpasar
 
 cara memakai :
@@ -5,3 +6,6 @@ cara memakai :
 2. import theme dengan ekstensi .zip
 3. cara mengakses page yaitu : www.nama-website.com/nama-pagenya
   contoh : http://rizkykaruniaputra.hol.es/user/
+=======
+# jajananpasar
+>>>>>>> parent of 81824a7... Update README.md
