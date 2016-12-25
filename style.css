@@ -354,13 +354,6 @@ th{
   outline: 1px solid slategrey;
 }
 
-.snack h4{
-  margin-top: 25px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #ccc;
-  margin-bottom: 10px;
-}
-
 .daftar-snack h4{
   margin-top: 25px;
 }
@@ -404,6 +397,15 @@ th{
   background-color: #666666;
   font-size: 19px;
 }
+
+.snack h4{
+  margin-top: 25px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
 .snack .col-sm-3{
   margin-top: 20px;
 
