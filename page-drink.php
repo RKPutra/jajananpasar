@@ -78,7 +78,7 @@
 				<div id="slider"></div>
 			</div>
 			<div class="col-sm-7">
-				<p>Harga: Rp 1.000 - Rp 10.000</p>
+				<p>Harga: Rp 1.000 - Rp <input type="text" id="amount" readonly style="border:0; width: 50px;"></p>
 			</div>
 			<div class="col-sm-3">
 				<input type="button" value="Filter" class="btn btn-primary filter"></input>
