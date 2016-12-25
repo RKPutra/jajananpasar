@@ -61,7 +61,7 @@
         $( "#amount" ).val( ui.value );
       }
     });
-    $( "#amount" ).val( $( "#slider-range-max" ).slider( "value" ) );
+    $( "#amount" ).val( $( "#slider" ).slider( "value" ) );
   } );
   </script>
   <script type="text/javascript">
