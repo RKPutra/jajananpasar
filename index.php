@@ -2,7 +2,8 @@
 get_header();?>
 
 <header class="container-fluid site-header">
-		
+	
+	<div class="bg" style="background: url('<?php header_image(); ?>') no-repeat center center;"></div>		
 	<div class="jumbotron" style="background-image: url('<?php header_image(); ?>');">
 		<div class="row">
 			<div class="col-sm-8">
@@ -13,14 +14,22 @@ get_header();?>
 					<h3>Pesan Snack Box</h3>
 				</div>
 				<div class="col-sm-10">
-					<form method="post" action="<?php echo get_page_link( get_page_by_title( 'snack' )->ID ); ?>">
-						<label><h4>Tanggal Pengiriman</h4></label>
-						<input type="text" class="input-group date form_date form-control" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" placeholder="tanggal">  
-						<label><h4>Jam Pengiriman</h4></label>
-						<input type="text" class="input-group date form_time form-control" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii" placeholder="jam"></input>
-						<label><h4>Jumlah Box</h4></label>
-						<input type="number" class="form-control" placeholder="jumlah" min="1"></input>
-						<button type="submit" class="btn btn-primary">PILIH SNACK</button>
+					<form method="post" id="form-awal" data-toggle="validator" role="form" action="<?php echo get_page_link( get_page_by_title( 'snack' )->ID ); ?>">
+						  
+						  
+							<label><h4>Tanggal Pengiriman</h4></label>
+							<input type="text" class="input-group date form_date form-control" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" name="tanggal" placeholder="tanggal"  required>
+							<div class="help-block with-errors"></div>
+						  
+							<label><h4>Jam Pengiriman</h4></label>
+							<input type="text" class="input-group date form_time form-control" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii" name="jam" placeholder="jam" required></input>
+							<div class="help-block with-errors"></div>
+						
+							<label><h4>Jumlah Box</h4></label>
+							<input type="number" class="form-control" name="jumlah" placeholder="jumlah" min="1" required></input>
+						  
+							<button type="submit" class="btn btn-primary">PILIH SNACK</button>
+							
 					</form>
 				</div>
 			</div>
@@ -30,7 +39,7 @@ get_header();?>
 </header>
 
 <div class="container-fluid">
-	<div class="row apa">
+	<div class="row apa slideanim">
 		<div class="col-sm-12">
 			<h4>APASIH JAJANANPASAR.ID ITU?</h4>
 		</div>
@@ -50,7 +59,7 @@ get_header();?>
 	</div>
 </div>
 <div class="container-fluid mengapa">
-	<div class="row">
+	<div class="row slideanim">
 		<div class="col-sm-12">
 			<h4>MENGAPA MEMESAN SNACK BOX DARI KAMI</h4>
 		</div>
