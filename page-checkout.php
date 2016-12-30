@@ -21,7 +21,7 @@
 					</div>
 				</div>
 
-				<form method="post" action="<?php echo get_page_link( get_page_by_title( 'konfirmasi pembayaran' )->ID ); ?>">
+				<form method="post" data-toggle="validator" role="form" action="<?php echo get_page_link( get_page_by_title( 'konfirmasi pembayaran' )->ID ); ?>">
 				<div class="form-group">
 					<h3>Data Pemesan</h3>
 					<p>Isiskan data lengkap pemesan snack box secara benar</p>
@@ -29,19 +29,22 @@
 				<div class="form-group row">
 			      <label for="inputNama" class="col-sm-2 col-form-label">Nama *</label>
 			      <div class="col-sm-10">
-			        <input type="text" class="form-control form-checkout" id="inputNama">
+			        <input type="text" class="form-control form-checkout" id="inputNama" required>
+			        <div class="help-block with-errors"></div>
 			      </div>
 			    </div>
 			    <div class="form-group row">
 			      <label for="inputEmail" class="col-sm-2 col-form-label">Email *</label>
 			      <div class="col-sm-10">
-			        <input type="email" class="form-control form-checkout" id="inputEmail">
+			        <input type="email" class="form-control form-checkout" id="inputEmail" required>
+			        <div class="help-block with-errors"></div>
 			      </div>
 			    </div>
 			    <div class="form-group row">
 			      <label for="inputNoTelp" class="col-sm-2 col-form-label">No. Telp *</label>
 			      <div class="col-sm-10">
-			        <input type="text" class="form-control form-checkout" id="inputNoTelp">
+			        <input type="text" class="form-control form-checkout" id="inputNoTelp" required>
+			        <div class="help-block with-errors"></div>
 			      </div>
 			    </div>
 			    
@@ -63,13 +66,15 @@
 			    <div class="form-group row">
 			      <label for="inputPassword3" class="col-sm-2 col-form-label">Password *</label>
 			      <div class="col-sm-10">
-			        <input type="password" class="form-control form-checkout" id="inputPassword">
+			        <input type="password" data-minlength="6" class="form-control form-checkout" id="inputPassword" required>
+			      	<div class="help-block">Minimum 6 karakter</div>
 			      </div>
 			    </div>
 			    <div class="form-group row">
 			      <label for="inputKonfirmasiPassword" class="col-sm-2 col-form-label">Konfirmasi Password *</label>
 			      <div class="col-sm-10">
-			        <input type="password" class="form-control form-checkout" id="inputKonfirmasiPassword">
+			        <input type="password" class="form-control form-checkout" id="inputKonfirmasiPassword" data-match="#inputPassword" data-match-error="Ooops, password tidak sama" required>
+			        <div class="help-block with-errors"></div>
 			      </div>
 			    </div>
 
@@ -81,7 +86,8 @@
 			    <div class="form-group row">
 			      <label for="inputAlamat" class="col-sm-2 col-form-label">Alamat *</label>
 			      <div class="col-sm-10">
-			        <textarea class="form-control form-checkout" id="inputAlamat"></textarea>
+			        <textarea class="form-control form-checkout" id="inputAlamat" required></textarea>
+			        <div class="help-block with-errors"></div>
 			      </div>
 			    </div>
 			    <div class="form-group row">
